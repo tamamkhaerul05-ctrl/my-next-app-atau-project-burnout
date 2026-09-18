@@ -1,0 +1,37 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Assessment {
+  id        String   @id @default(cuid())
+  score     Int
+  result    String
+  createdAt DateTime @default(now())
+}
+
+model Journal {
+  id        String   @id @default(cuid())
+  mood      String
+  note      String
+  createdAt DateTime @default(now())
+}
+
+model CompanionChat {
+  id        String   @id @default(uuid())
+  message   String
+  sender    String   // 'user' atau 'companion'
+  createdAt DateTime @default(now())
+}
+
+model UserSecurity {
+  id            String   @id @default(uuid())
+  email         String   @unique
+  twoFactorAuth Boolean  @default(false)
+  encryptionKey String?
+  updatedAt     DateTime @updatedAt
+}
