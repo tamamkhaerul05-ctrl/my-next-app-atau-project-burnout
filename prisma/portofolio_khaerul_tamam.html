@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaerul Tamam - IT Support</title>
+    <style>
+        /* Basic Styling */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { background-color: #f4f4f4; padding: 20px 0; border-bottom: 3px solid #007bff; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        header h1 { margin: 0; color: #007bff; font-size: 24px; }
+        header nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: bold; }
+        header nav a:hover { color: #007bff; }
+
+        /* Hero Section */
+        .hero { padding: 100px 0; text-align: center; background-color: #fff; }
+        .hero img { border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 5px solid #f4f4f4; }
+        .hero h2 { margin-top: 30px; font-size: 40px; color: #007bff; }
+        .hero p { font-size: 20px; color: #777; margin-bottom: 40px; }
+        .hero .btn { display: inline-block; padding: 10px 25px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .hero .btn:hover { background-color: #0056b3; }
+
+        /* Sections General */
+        section { padding: 80px 0; }
+        section h3 { text-align: center; font-size: 32px; margin-bottom: 60px; color: #007bff; }
+
+        /* About Me */
+        .about .container { display: flex; align-items: center; }
+        .about-text { flex: 1; padding-right: 40px; }
+        .about-image { flex: 1; }
+
+        /* Experience */
+        .experience-item { margin-bottom: 50px; padding-left: 30px; border-left: 4px solid #007bff; position: relative; }
+        .experience-item h4 { margin: 0 0 10px; font-size: 20px; }
+        .experience-item span { color: #777; font-style: italic; display: block; margin-bottom: 15px; }
+
+        /* Skills */
+        .skills ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+        .skills li { background: #e0f7fa; color: #006064; padding: 10px 20px; margin: 10px; border-radius: 20px; font-weight: bold; }
+
+        /* Contact */
+        .contact { text-align: center; background-color: #f4f4f4; }
+        .contact p { font-size: 18px; }
+        .contact a { color: #007bff; font-weight: bold; text-decoration: none; }
+        .social-links { margin-top: 30px; }
+        .social-links a { margin: 0 10px; }
+
+        /* Footer */
+        footer { background-color: #333; color: #fff; padding: 30px 0; text-align: center; }
+        footer p { margin: 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Khaerul Tamam</h1>
+            <nav>
+                <a href="#about">Tentang Saya</a>
+                <a href="#experience">Pengalaman</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="image_0.png" alt="Foto Profil Khaerul Tamam">
+            <h2>Khaerul Tamam</h2>
+            <p>IT Support Profesional</p>
+            <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h3>Tentang Saya</h3>
+                <p>Saya adalah seorang profesional IT Support yang berdedikasi dengan pengalaman luas dalam troubleshooting, manajemen jaringan, dan dukungan teknis. Saya memiliki pemahaman mendalam tentang infrastruktur IT dan fokus pada penyediaan solusi yang efisien dan efektif untuk memastikan kelancaran operasional. Saya bersemangat untuk belajar dan tumbuh dalam lingkungan teknologi yang dinamis.</p>
+            </div>
+            <div class="about-image">
+                <img src="image_0.png" alt="Foto Profil Khaerul Tamam" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h3>Pengalaman Kerja</h3>
+
+            <div class="experience-item">
+                <h4>IT Support Specialist</h4>
+                <span>PT Telkom Akses | [Tanggal Mulai] - Sekarang</span>
+                <p>Bertanggung jawab untuk memberikan dukungan teknis tingkat satu dan dua kepada pengguna internal dan eksternal. Melakukan troubleshooting perangkat keras, perangkat lunak, dan masalah jaringan. Berperan aktif dalam pemeliharaan sistem dan implementasi solusi IT baru.</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>[Jabatan Sebelumnya]</h4>
+                <span>[Nama Perusahaan] | [Tanggal Mulai] - [Tanggal Selesai]</span>
+                <p>[Deskripsikan tanggung jawab utama dan pencapaian Anda di sini. Contoh: Membantu migrasi sistem email, mengelola inventaris aset IT, dll.]</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h3>Keahlian Utama</h3>
+            <ul>
+                <li>Windows & Linux OS</li>
+                <li>Troubleshooting Perangkat Keras & Lunak</li>
+                <li>Manajemen Jaringan (LAN/WAN/Wi-Fi)</li>
+                <li>Konfigurasi Router & Switch</li>
+                <li>Dukungan Teknis Lintas Platform</li>
+                <li>Layanan Pelanggan (Customer Service)</li>
+                <li>Administrasi Server Dasar</li>
+                <li>Keamanan Jaringan</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h3>Pendidikan</h3>
+            <div class="experience-item">
+                <h4>Universitas Saintek Muhammadiyah</h4>
+                <span>Teknik Informatika | [Tahun Kelulusan]</span>
+                <p>Fokus pada pengembangan perangkat lunak, jaringan komputer, dan sistem informasi. Menyelesaikan proyek akhir tentang [Topik Skripsi].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Kontak Saya</h3>
+            <p>Silakan hubungi saya untuk peluang kolaborasi atau kesempatan kerja.</p>
+            <p>Email: <a href="mailto:khaerultamam@email.com">khaerultamam@email.com</a></p>
+            <p>Telepon: <a href="tel:+6281234567890">+62 812 3456 7890</a></p>
+            <div class="social-links">
+                <a href="[Link LinkedIn Anda]" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30"></a>
+                <a href="[Link GitHub Anda]" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Khaerul Tamam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
